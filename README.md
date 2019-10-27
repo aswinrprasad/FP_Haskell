@@ -26,14 +26,14 @@ Lambda calculus is framework developed by Alonzo Church to study computations wi
 - Functions are First-Class and can be Higher-Order: First-class functions are treated as first-class variable. The first class variables can be passed to functions as parameter, can be returned from functions or stored in data structures. Higher order functions are the functions that take other functions as arguments and they can also return functions.
 
 Example : 
-  show_output(f)            // function show_output is declared taking argument f 
-                            // which are another function
-      f();                  // calling passed function
-  
-  print_gfg()             // declaring another function 
-      print("hello gfg");
-  
-  show_output(print_gfg)  // passing function in another function
+    show_output(f)            // function show_output is declared taking argument f 
+                              // which are another function
+        f();                  // calling passed function
+    
+    print_gfg()             // declaring another function 
+        print("hello gfg");
+    
+    show_output(print_gfg)  // passing function in another function
 
 - Variables are Immutable: In functional programming, we can’t modify a variable after it’s been initialized. We can create new variables – but we can’t modify existing variables, and this really helps to maintain state throughout the runtime of a program. Once we create a variable and set its value, we can have full confidence knowing that the value of that variable will never change.
 

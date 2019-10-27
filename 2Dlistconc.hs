@@ -1,0 +1,1 @@
+conc (x:xs) = x ++ concat xs

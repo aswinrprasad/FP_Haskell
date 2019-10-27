@@ -25,7 +25,8 @@ Lambda calculus is framework developed by Alonzo Church to study computations wi
 
 - Functions are First-Class and can be Higher-Order: First-class functions are treated as first-class variable. The first class variables can be passed to functions as parameter, can be returned from functions or stored in data structures. Higher order functions are the functions that take other functions as arguments and they can also return functions.
 
-Example : 
+Example :
+
     show_output(f)            // function show_output is declared taking argument f 
                               // which are another function
         f();                  // calling passed function

@@ -21,8 +21,9 @@ search needle haystack =let nlen = length needle
                         in foldl' (\ acc x -> if take nlen x == needle then True else acc ) False ( tails haystack )
 
 
--- Head is dangerous. If stock doesn't have an element where the condition won't satisfy , it returns an empty list. 'head' on an empty list is an error. So we use 'find' instead.
+-- Head is dangerous. If stock doesn't have an element where the condition won't satisfy , dropWhile returns an empty list. 'head' on an empty list is an error. So we use 'find' instead.
 stock =[(994.4 ,2008 ,9 ,1) ,(995.2 ,2008 ,9 ,2) ,(999.2 ,2008 ,9 ,3) ,(1001.4 ,2008 ,9 ,4) ,(998.3 ,2008 ,9 ,5)]
 s = head ( dropWhile (\( val ,y ,m , d ) -> val < 1000) stock ) 
 
 s1 = find (\(val,y,m,d) -> val > 1000) stock
+
